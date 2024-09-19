@@ -1,0 +1,579 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem ;
+  border-bottom: 2px solid #3333;
+}
+
+header img {
+  height: 70px;
+}
+
+header > ul {
+  display: flex;
+  align-items: center;
+}
+
+header > ul > li {
+  list-style: none;
+  margin-right: 1rem;
+}
+header > ul > li:first-child {
+  margin-left: 2.5rem;
+}
+
+header > ul > li > a {
+  font-size: 1.5rem;
+  color: #333333;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+}
+#animation {
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgb(92, 211, 92);
+  position: absolute;
+  padding: 0.8rem 2rem;
+  border-radius: 7px;
+  top: -6.25rem;
+  left: 1.25rem;
+  animation: showWclm 0.5s ease-in-out 1s forwards;
+}
+
+@keyframes showWclm {
+  0% {
+    top: -1.25rem;
+    transform: skew(0deg, -5deg) scaleY(0);
+  }
+  80% {
+    top: 1.875rem;
+    transform: skew(10deg, -5deg) scaleY(1.2);
+  }
+  100% {
+    top: 7.6rem;
+    transform: skew(-10deg, -5deg) scaleY(1);
+  }
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh - 5rem;
+  text-align: center;
+  background-image: linear-gradient(rgba(35, 31, 31, 0.7), #333),
+    url(/images/group.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hero > .hero-text img {
+  width: 150px;
+  align-self: start;
+  margin-bottom: 10px;
+}
+
+#hero > .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 50%;
+  margin-left: 3rem;
+}
+
+#hero > .hero-text > h1 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  padding: 15px;
+  background-color: beige;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+}
+
+#hero > .hero-text > h2 {
+  font-size: 2rem;
+  color: whitesmoke;
+  text-align: start;
+  margin-bottom: 0.5rem;
+}
+
+#hero > .hero-text > p {
+  font-size: 1.3rem;
+  text-align: start;
+  color: rgb(188, 188, 188);
+}
+
+#btn-rm {
+  align-self: start;
+  padding: 0.6rem 1.8rem;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  text-transform: capitalize;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  background-color: rgb(92, 211, 92);
+  color: whitesmoke;
+  list-style: none;
+  text-decoration: none;
+}
+
+#btn-rm:visited,
+#btn-rm:active {
+  text-decoration: none;
+}
+
+#btn-rm:hover {
+  background-color: rgb(63, 154, 63);
+}
+
+#skills {
+  width: 100%;
+  height: 100vh + 5rem;
+  background-color: slategrey;
+}
+#skills > h4 {
+  width: 50%;
+  font-size: 2rem;
+  align-self: center;
+  margin: 0 7rem;
+  padding-top: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 1rem 7rem;
+  padding-bottom: 1rem;
+}
+
+.grid .img1 > img,
+.img2 > img {
+  width: 300px;
+  height: 300px;
+  align-self: center;
+  place-self: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.grid p {
+  font-size: 1.7rem;
+  padding: 2rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: #3b3f3f;
+  border-top: 2px solid #0d0808d5;
+}
+
+footer img {
+  width: 60px;
+  height: 40px;
+}
+
+footer p {
+  font-size: 20px;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 476px) {
+}
+@media screen and (max-width: 476px) {
+}
+@media screen and (max-width: 920px) {
+  #hero {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh ;
+  
+   
+  }
+
+  .hero-text{
+    margin-top: 5rem;
+  }
+
+  #hero > .hero-text img {
+    width: 150px;
+    align-self: start;
+    margin-bottom: 10px;
+  }
+  
+  #hero > .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    margin-left: 3rem;
+  }
+  
+  #hero > .hero-text > h1 {
+    font-size: 1rem;
+    color: rgb(12, 99, 12);
+    text-align: center;
+    padding: 15px;
+    background-color: beige;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+  }
+  
+  #hero > .hero-text > h2 {
+    font-size: 1rem;
+    color: whitesmoke;
+    text-align: start;
+    margin-bottom: 0.5rem;
+  }
+  
+  #hero > .hero-text > p {
+    font-size: 1rem;
+    text-align: start;
+    margin-right: 1rem;
+    color: rgb(188, 188, 188);
+  }
+  #skills {
+    width: 100%;
+    height: 70vh + 5rem;
+    justify-content: center;
+    background-color: beige;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-left: auto;
+    padding: 1rem;
+  }
+  #skills > h4 {
+    width: 80%;
+    font-size: 2rem;
+    align-self: center;
+    margin: 0 3rem;
+    padding-top: 2rem;
+  }
+
+  .grid .img1 > img,
+  .img2 > img {
+    width: 400px;
+    height: 400px;
+    align-self: center;
+    place-self: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 676px) {
+  #hero {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh ;
+  
+   
+  }
+
+  .hero-text{
+    margin-top: 5rem;
+  }
+
+  #hero > .hero-text img {
+    width: 100px;
+    align-self: start;
+    margin-bottom: 10px;
+  }
+  
+  #hero > .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    margin-left: 3rem;
+  }
+  
+  #hero > .hero-text > h1 {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    background-color: beige;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+  }
+  
+  #hero > .hero-text > h2 {
+    font-size: 1rem;
+    color: whitesmoke;
+    text-align: start;
+    margin-bottom: 0.5rem;
+  }
+  
+  #hero > .hero-text > p {
+    font-size: 1rem;
+    text-align: start;
+    margin-right: 1rem;
+    color: rgb(188, 188, 188);
+  }
+  #skills {
+    width: 100%;
+    height: 70vh + 5rem;
+    justify-content: center;
+    background-color: beige;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-left: auto;
+    padding: 1rem;
+  }
+
+  .grid .img1 > img,
+  .img2 > img {
+    width: 590px;
+    height: 590px;
+    align-self: center;
+    place-self: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #hero {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh ;
+  
+   
+  }
+
+  .hero-text{
+    margin-top: 5rem;
+  }
+
+  #hero > .hero-text img {
+    width: 100px;
+    align-self: start;
+    margin-bottom: 10px;
+  }
+  
+  #hero > .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    margin-left: 3rem;
+  }
+  
+  #hero > .hero-text > h1 {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    background-color: beige;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+  }
+  
+  #hero > .hero-text > h2 {
+    font-size: 1rem;
+    color: whitesmoke;
+    text-align: start;
+    margin-bottom: 0.5rem;
+  }
+  
+  #hero > .hero-text > p {
+    font-size: 1rem;
+    text-align: start;
+    color: rgb(188, 188, 188);
+  }
+  #skills {
+    width: 100%;
+    height: 70vh + 5rem;
+    justify-content: center;
+    background-color: bisque;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-left: auto;
+    padding: 1rem;
+  }
+
+  .grid .img1 > img,
+  .img2 > img {
+    width: 400px;
+    height: 400px;
+    align-self: center;
+    place-self: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 476px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem ;
+        border-bottom: 2px solid #3333;
+      }      
+      header img {
+        height: 50px;
+      }
+      
+      header > ul > li {
+        list-style: none;
+        margin-right: 0.5rem;
+      }
+      header > ul > li:first-child {
+        margin-left: 0.4rem;
+      }
+      
+      header > ul > li > a {
+        font-size: 1rem;
+        color: #333333;
+        text-decoration: none;
+      }
+      #animation {
+        font-size: 1rem;
+        color: #936a6a;
+        background-color: rgb(204, 216, 204);
+        position: absolute;
+        padding: 0.8rem 2rem;
+        border-radius: 7px;
+        top: -6.25rem;
+        left: 1.25rem;
+        animation: showWclm 0.5s ease-in-out 1s forwards;
+      }
+
+      @keyframes showWclm {
+        0% {
+          top: -1.25rem;
+          transform: skew(0deg, -5deg) scaleY(0);
+        }
+        80% {
+          top: 1.875rem;
+          transform: skew(10deg, -5deg) scaleY(1.2);
+        }
+        100% {
+          top: 5.3rem;
+          transform: skew(-10deg, -5deg) scaleY(1);
+        }
+      }
+    #hero {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100vh ;
+      }
+    
+    
+      #hero > .hero-text img {
+        width: 100px;
+        align-self: start;
+        margin-bottom: 10px;
+      }     
+      #hero > .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        margin-left: 2rem;
+      }
+      
+      #hero > .hero-text > h1 {
+        font-size: 1rem;
+        color: #333;
+        text-align: center;
+        padding: 10px;
+        background-color: beige;
+        border-radius: 8px;
+        margin-bottom: 0.2rem;
+        white-space: nowrap;
+      }
+      
+      #hero > .hero-text > h2 {
+        font-size: 1rem;
+        color: whitesmoke;
+        text-align: start;
+        margin-bottom: 0.5rem;
+      }     
+      #hero > .hero-text > p {
+        font-size: 1rem;
+        text-align: start;
+        color: rgb(188, 188, 188);
+      }
+      #skills {
+        width: 100%;
+        height: 70vh + 5rem;
+        justify-content: center;
+        background-color: green;
+      }
+      #skills > h4 {
+        width: 85%;
+        font-size: 2rem;
+        align-self: center;
+        margin: 0 3rem;
+        padding-top: 2rem;
+      }
+      #btn-rm {
+        font-size: 1rem;
+        margin-top: .5rem;
+        background-color: rgb(77, 165, 77);
+
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        margin-left: auto;
+        padding: 1rem;
+      }   
+      .grid .img1 > img,
+      .img2 > img {
+        width: 400px;
+        height: 400px;
+        align-self: center;
+        place-self: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+}
+
+
